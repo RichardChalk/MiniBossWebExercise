@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styling - Centring */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Container class for both exercises 1 & 2 - INVISIBLE by default!*/
+.container {
+  margin-top: 80px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Used to only show correct exercise chosen in navbar */
+.active {
+  display: flex;
+}
+
+/* Exercise 1 */
+.shape {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Exercise 2 */
+.moving-square {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  align-content: center;
+  color: white;
+  background-color: green;
+  position: absolute;
+  transition: 0.3s;
+}
