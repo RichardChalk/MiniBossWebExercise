@@ -27,7 +27,7 @@ document
     const square = document.getElementById("movingSquare");
     const maxX = window.innerWidth - 100;
     const maxY = window.innerHeight - 100;
-    // Geenrates a whole number between 0-100
+    // Generates a whole number between 0-100
     square.style.left = Math.floor(Math.random() * maxX) + "px";
     square.style.top = Math.floor(Math.random() * maxY) + "px";
   });
