@@ -26,8 +26,10 @@ document
   .addEventListener("mouseover", function () {
     const square = document.getElementById("movingSquare");
     const maxX = window.innerWidth - 100;
-    const maxY = window.innerHeight - 100;
-    // Generates a whole number between 0-100
+    -100; // is the size of the square
+    const maxY = window.innerHeight - 100; // is the size of the square
+    // Generates a whole number between 0-max window width
     square.style.left = Math.floor(Math.random() * maxX) + "px";
+    // Generates a whole number between 0-max window height
     square.style.top = Math.floor(Math.random() * maxY) + "px";
   });
